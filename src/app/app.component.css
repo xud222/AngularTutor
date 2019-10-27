@@ -38,6 +38,7 @@
   border-right: black solid 2px;
   width: 800px;
   height: 600px;
+  color: red;
 }
 
 .innerContainerAbsolute{
@@ -50,6 +51,7 @@
   margin-left: 50px;
   width: 300px;
   height: 200px;
+  color: #007bff;
 }
 
 .innerContainerRelative{
@@ -113,24 +115,105 @@
 
 .container{
   position: relative;
-  border: lawngreen solid 2px;
+  border: lawngreen solid 3px;
+  margin: 0;
+  padding: 0;
+}
+
+.column{
+  display: inline-block;
+  vertical-align: top;
+  width: 75%;
+  border: deeppink solid 3px;
+  margin: 0;
+  padding: 0;
 }
 nav{
-  position: absolute;
-  border: deeppink solid 2px;
+  /*position: absolute;*/
+  display: inline-block;
+  vertical-align: top;
+  border: deeppink solid 3px;
   left: 0px;
-  width: 200px;
+  /*width: 200px;*/
+  width: 25%;
+  color: deeppink;
 }
+
 section{
-  margin-left: 200px;
+  /*display: inline-block;*/
+  /*vertical-align: top;*/
+  /*margin-left: 200px;*/
+  border: orange solid 3px;
+  padding: 10px;
 }
 footer{
+  /*border: lawngreen solid 3px;*/
   position: fixed;
   bottom: 0;
   left: 0;
-  height: 70px;
+  /*height: 70px;*/
   background-color: white;
+  width: 100%;
 }
 body{
   margin-bottom: 120px;
 }
+
+/*.page{*/
+/*  width: 800px;*/
+/*  background-color: #007bff;*/
+/*}*/
+
+.containerNew{
+  position: relative;
+  background-color: darkgreen;
+  height: 800px;
+}
+
+.modal1{
+  background-color: whitesmoke;
+  height: 300px;
+  width: 500px;
+  border: 1px;
+  padding: 30px;
+}
+
+.greyFont{
+  color: dimgrey;
+  background-color: lightgrey;
+}
+
+.greyColor{
+  color: dimgrey;
+}
+
+.button{
+  background-color: darkgreen;
+  color: whitesmoke;
+  text-align: center;
+}
+.greenFont{
+  color: darkgreen;
+}
+
+.center{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textbox{
+  height: 45px;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+}
+
+.lineBlock{
+  display: inline-block;
+  vertical-align: top;
+}
+
